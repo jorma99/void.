@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rules - PX Scripts Template</title>
+    <title>Ohjeet - Void RP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
 </head>
-<body class="bg-gray-900">
+<body class="bg-black text-gray-100">
     <!-- Header with Navigation -->
-    <header class="fixed w-full bg-black/80 backdrop-blur-sm z-50">
+    <header class="fixed w-full bg-black/90 backdrop-blur-md z-50 border-b border-gray-800">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
                 <a href="../index.html" class="flex items-center space-x-2">
-                    <img src="../logo (transparent).png" alt="PX Scripts Logo" class="h-12 hover-lift">
+                    <img src="../logo (transparent).png" alt="Void RP Logo" class="h-12 hover-lift">
                 </a>
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden text-white focus:outline-none" onclick="toggleMobileMenu()">
@@ -22,108 +22,121 @@
                 </button>
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex space-x-8">
-                    <a href="../index.html" class="nav-link text-white">Etusivu</a>
-                    <a href="kauppa.html" class="nav-link text-white">Kauppa</a>
-                    <a href="ohjeet.html" class="nav-link text-white">Ohjeet</a>
-                    <a href="säännöt.html" class="nav-link text-white">Säännöt</a>
+                    <a href="../index.html" class="nav-link text-gray-300 hover:text-white transition-colors">Etusivu</a>
+                    <a href="kauppa.html" class="nav-link text-gray-300 hover:text-white transition-colors">Kauppa</a>
+                    <a href="ohjeet.html" class="nav-link text-blue-400 font-semibold">Ohjeet</a>
+                    <a href="säännöt.html" class="nav-link text-gray-300 hover:text-white transition-colors">Säännöt</a>
                 </div>
             </div>
         </div>
         <!-- Mobile Navigation -->
-        <div id="mobileMenu" class="md:hidden hidden bg-black/95">
+        <div id="mobileMenu" class="md:hidden hidden bg-black/95 border-b border-gray-800">
             <div class="container mx-auto px-4 py-4">
                 <div class="flex flex-col space-y-4">
-                    <a href="../index.html" class="nav-link text-white py-2">Etusivu</a>
-                    <a href="kauppa.html" class="nav-link text-white py-2">Kauppa</a>
-                    <a href="ohjeet.html" class="nav-link text-white py-2">Ohjeet</a>
-                    <a href="säännöt.html" class="nav-link text-white py-2">Säännöt</a>
+                    <a href="../index.html" class="nav-link text-gray-300 py-2">Etusivu</a>
+                    <a href="kauppa.html" class="nav-link text-gray-300 py-2">Kauppa</a>
+                    <a href="ohjeet.html" class="nav-link text-blue-400 font-semibold py-2">Ohjeet</a>
+                    <a href="säännöt.html" class="nav-link text-gray-300 py-2">Säännöt</a>
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Rules Content -->
-    <main class="pt-32 pb-16">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl md:text-5xl font-bold text-center text-white mb-12 text-gradient">Ohjeet</h1>
+    <main class="pt-32 pb-20 bg-gray-950 min-h-screen">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h1 class="text-5xl font-extrabold text-center text-white mb-12 tracking-tight">
+                📖 Palvelimen Ohjeet
+            </h1>
+
+            <!-- Palvelimelle liittyminen -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 mb-8 shadow-xl">
+                <h2 class="text-3xl font-bold text-blue-400 mb-6 flex items-center gap-3">🎮 Palvelimelle liittyminen</h2>
+                <ol class="text-gray-300 space-y-3 list-decimal ml-6 text-sm md:text-base">
+                    <li>Liity Discord-palvelimelle.</li>
+                    <li>Lue palvelimen säännöt huolellisesti.</li>
+                    <li>Avaa FiveM ja yhdistä palvelimelle.</li>
+                </ol>
+            </div>
+
+            <!-- Näppäimet -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 mb-8 shadow-xl">
+                <h2 class="text-3xl font-bold text-blue-400 mb-6 flex items-center gap-3">⌨️ Näppäimet</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Inventory</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">F2</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Inventory Hotbar</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">TAB</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Vaatemenu</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">Y</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Alt-silmä</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">ALT</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Emote Menu</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">F3</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Kädet ylös</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">Z</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Chatti</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">T</span>
+                    </div>
+                    <div class="bg-gray-950/50 p-4 rounded-xl border border-gray-800/60 flex justify-between items-center">
+                        <span class="text-gray-400 text-sm">Radial Menu</span>
+                        <span class="bg-blue-600/30 border border-blue-500/40 text-blue-300 px-3 py-1 rounded-lg font-mono text-sm font-bold">F1 / Z</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Yleiset Komennot -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 mb-8 shadow-xl">
+                <h2 class="text-3xl font-bold text-blue-400 mb-6 flex items-center gap-3">⚡ Yleiset Komennot</h2>
+                <ul class="space-y-3 text-sm md:text-base text-gray-300">
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/report</span> <span class="text-gray-300">Luo Reportti admineille</span></li>
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/kaatu</span> <span class="text-gray-300">Saat mopon millä voit ajaa</span></li>
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/aim</span> <span class="text-gray-300">Vaihda ampumistyyli</span></li>
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/tägit</span> <span class="text-gray-300">Chat-Tägivalikko</span></li>
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/sää</span> <span class="text-gray-300">Vaihda säätä</span></li>
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/hud</span> <span class="text-gray-300">Piilota tai näytä hudi</span></li>
+                    <li class="flex justify-between items-center bg-gray-950/50 p-3.5 rounded-xl border border-gray-800/60"><span class="font-mono text-blue-400">/alueet</span> <span class="text-gray-300">Alueiden status</span></li>
+                </ul>
+            </div>
+
+            <!-- Yhteisö -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl p-8 mb-8 shadow-xl text-center">
+                <h2 class="text-2xl font-bold text-white mb-2">🤝 Olethan mukava kaikille</h2>
+                <p class="text-gray-400 text-sm">Pidetään yhdessä palvelimen ilmapiiri hyvänä ja reiluna kaikille pelaajille.</p>
+            </div>
+
+            <!-- Tarvitsetko apua? -->
+            <div class="bg-blue-950/40 border border-blue-900/50 rounded-2xl p-8 text-center shadow-xl">
+                <h2 class="text-3xl font-bold text-white mb-4">💬 Tarvitsetko apua?</h2>
+                <p class="text-gray-300 mb-6">
+                    Mikäli tarvitset apua, avaa Discordissa tuki-ticket.
+                </p>
+                <a href="https://discord.gg/wPV8ztC3Sq"
+                   target="_blank"
+                   class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-xl inline-block transition-colors shadow-lg">
+                    Liity Discordiin
                 </a>
-            </div>
-            </div>
-
-        <h1 class="text-5xl font-bold text-center text-white mb-12">
-         
-        </h1>
-
-        <div class="bg-gray-800 rounded-xl p-8 mb-8">
-            <h2 class="text-3xl font-bold text-blue-400 mb-4">🎮 Palvelimelle liittyminen</h2>
-
-            <ol class="text-white space-y-3 list-decimal ml-6">
-                <li>Liity Discord-palvelimelle.</li>
-                <li>Lue palvelimen säännöt.</li>
-                <li>Avaa FiveM ja yhdistä palvelimelle.</li>
-            </ol>
-        </div>
-
-        <div class="bg-gray-800 rounded-xl p-8 mb-8">
-            <h2 class="text-3xl font-bold text-blue-400 mb-4">Näppäimet</h2>
-
-            <ul class="text-white space-y-3">
-                <li>F2 : INVENTORY</li>
-                <li>TAB : INVENTORY HOTBAR</li>
-                <li>Y : VAATEMENU</li>
-                <li>ALT :ALT SILMÄ</li>
-                <li>F3 : EMOTE MENU</li>
-                <li>z : KÄDET YLÖS</li>
-                <li>T : CHATTI</li>
-                <li>z : RADIALMENU</li>
-            </ul>
-        </div>
-
-        <div class="bg-gray-800 rounded-xl p-8 mb-8">
-            <h2 class="text-3xl font-bold text-blue-400 mb-4">Yleiset Komennot</h2>
-
-            <ul class="text-white space-y-3">
-                <li>/report : Luo Reportti admineille</li>
-                <li>/kaatu : saat mopon millä voit ajaa</li>
-                <li>/aim : Vaihda ampumistyyli</li>
-                <li>/tägit : Chat-Tägivalikko</li>
-                <li>/sää : vaihda säätä</li>
-                <li>/hud : Piilota tai näytä hudi</li>
-                <li>/alueet : alueiden status</li>
-            </ul>
-        </div>
-
-        <div class="bg-gray-800 rounded-xl p-8 mb-8">
-            <h2 class="text-3xl font-bold text-blue-400 mb-4">Olethan mukava kaikille</h2>
-
-            <ul class="text-white space-y-3">
-            </ul>
-        </div>
-
-        <div class="bg-blue-900 rounded-xl p-8">
-            <h2 class="text-3xl font-bold text-white mb-4">💬 Tarvitsetko apua?</h2>
-
-            <p class="text-white mb-6">
-                Mikäli tarvitset apua, avaa Discordissa tuki-ticket.
-            </p>
-
-            <a href="https://discord.gg/wPV8ztC3Sq"
-               target="_blank"
-               class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg inline-block">
-                Liity Discordiin
-            </a>
-        </div>
-
-    </div>
-</section> </section>
             </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black py-8">
+    <footer class="bg-black py-8 border-t border-gray-800">
         <div class="container mx-auto px-4 text-center">
-            <p class="text-gray-500">&copy; 2026 void.</p>
+            <p class="text-gray-500 text-sm">&copy; 2026 Void RP. Kaikki oikeudet pidätetään.</p>
         </div>
     </footer>
 
@@ -133,19 +146,6 @@
             const mobileMenu = document.getElementById('mobileMenu');
             mobileMenu.classList.toggle('hidden');
         }
-
-        // Smooth scroll to section
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            const headerOffset = 100;
-            const elementPosition = section.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-            });
-        }
     </script>
 </body>
-</html> 
+</html>
